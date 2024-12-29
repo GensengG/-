@@ -17,10 +17,8 @@ const Listing = (items:any) => {
 
     return (
         <div className="item-list">
-            {console.log(imgArr)}
             {imgArr.map((item:Object) => (
                 <div className="item" key={item.id}>
-                    {/* {console.log(item)} */}
                     <div className="item-image">
                         <a href={item.url}>
                             <img src={item.mainImage["url_570xN"]}/>
