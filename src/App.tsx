@@ -3,7 +3,7 @@ import etsy from './etsy.json'
 import './App.css'
 
 function App() {
-  let items:any = etsy;
+  let items = etsy;
 
   return (
       <div>
