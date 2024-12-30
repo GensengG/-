@@ -1,9 +1,9 @@
-import { ObjectData } from "../src/index"
+import { ObjectData} from "../src/index"
 
-const Listing = (items:any) => {
+const Listing = (items) => {
 
     let {data} = items;  
-    let imgArr:ObjectData[] = data.map((obj):object => (
+    let imgArr:ObjectData[] = data.map((obj:ObjectData) => (
         {
             id: obj["listing_id"],
             url: obj.url,
@@ -17,7 +17,7 @@ const Listing = (items:any) => {
 
     return (
         <div className="item-list">
-            {imgArr.map((item:Object) => (
+            {imgArr.map((item:ObjectData) => (
                 <div className="item" key={item.id}>
                     <div className="item-image">
                         <a href={item.url}>
